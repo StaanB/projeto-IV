@@ -1,0 +1,31 @@
+@use 'variables';
+@use 'navigation';
+@use 'header';
+@use 'about';
+@use 'movie-facts';
+@use 'awards';
+@use 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+    h1, h2, h3{
+        font-family: 'Bebas Neue', sans-serif;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+body{
+    background-color: variables.$mainColor;
+    color: variables.$backgroundColor;
+}

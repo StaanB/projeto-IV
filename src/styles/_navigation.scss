@@ -1,0 +1,46 @@
+@use 'variables';
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem;
+
+    background-color: variables.$backgroundColor;
+
+    box-shadow: 2px 2px 2px variables.$backgroundColor;
+
+    @media (min-width: 300px) and (max-width: 1080px) {
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+
+        color: variables.$mainColor;
+    }
+
+    &__list {
+        display: flex;
+        gap: 1rem;
+        margin-right: 2rem;
+        font-size: 1.1rem;
+
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: all ease 1s;
+
+        @media (min-width: 350px) and (max-width: 1080px) {
+            margin-right: 0;
+        }
+
+        &__item {
+            cursor: pointer;
+            color: variables.$mainColor;
+
+            &:hover {
+                color: variables.$secondaryColor;
+            }
+        }
+    }
+}
